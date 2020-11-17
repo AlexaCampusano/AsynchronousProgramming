@@ -1,0 +1,31 @@
+td {
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    text-align: center;
+}
+
+td span {
+    display: none;
+}
+
+.reveal {
+    background-color: red;
+}
+
+.reveal span {
+    display: block;
+}
+
+.success {
+    background-color: purple;
+}
+
+.success span {
+    display: block;
+}
+
+.hover {
+    background-color: orange;
+}

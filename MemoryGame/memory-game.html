@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="memory-game.css">
+        <script src="memory-game.js"></script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td onclick="revealNumber(this)"><span id="cell00"></span></td>
+                <td onclick="revealNumber(this)"><span id="cell01"></span></td>
+                <td onclick="revealNumber(this)"><span id="cell02"></span></td>
+            </tr>
+            <tr>
+                <td onclick="revealNumber(this)"><span id="cell10"></span></td>
+                <td onclick="revealNumber(this)"><span id="cell11"></span></td>
+                <td onclick="revealNumber(this)"><span id="cell12"></span></td>
+            </tr>
+            <tr>
+                <td onclick="revealNumber(this)"><span id="cell20"></span></td>
+                <td onclick="revealNumber(this)"><span id="cell21"></span></td>
+                <td onclick="revealNumber(this)"><span id="cell22"></span></td>
+            </tr>
+        </table>
+        <button onclick="fillUpGrid()">Restart</button>
+        <span>Time Elapsed: <small id="timeElapsed"></small> seconds</span>
+    </body>
+</html>
