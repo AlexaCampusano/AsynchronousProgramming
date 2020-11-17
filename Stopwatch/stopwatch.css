@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+}
+
+#past-time-container {
+    list-style-type: none;
+}
+
+.action-buttons {
+    margin-top: 10px;
+}
+
+.action-buttons button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.stopwatch-timer {
+    font-size: 30px;
+}
+
+.title {
+    text-transform: uppercase;
+    color: orange;
+}

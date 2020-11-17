@@ -78,10 +78,10 @@ reset = () => {
     const element = document.getElementById('stopwatch-timer');
     const pastTimeContainer = document.getElementById('past-time-container');
     clearInterval(timerInterval);
-    timerInterval = null;
     timer = 0;
     element.innerHTML = getHundrethOfSecond(timer);
     pastTimeContainer.innerHTML = null;
+    started = false;
 }
 
 record = () => {
