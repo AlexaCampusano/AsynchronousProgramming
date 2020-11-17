@@ -44,6 +44,7 @@ const fillUpGrid = () => {
             element.childNodes[0].innerHTML = options[random];
             element.addEventListener('mouseenter', () => element.classList.add('hover'));
             element.addEventListener('mouseleave', () => element.classList.remove('hover'));
+            element.addEventListener('click', () => revealNumber(element));
             options.splice(random, 1);
         }
     }
