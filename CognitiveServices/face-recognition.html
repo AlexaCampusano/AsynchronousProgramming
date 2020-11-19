@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="face-recognition.js"></script>
+        <script src="cognitive-service.js"></script>
+    </head>
+    <body>
+        <h1 id="title" class="title">Face Recognition Demo</h1>
+        <!-- <hr /> -->
+        <h3>Enter an image URL</h3>
+        <input id="imageUrl" type="url"/>
+        <br/>
+        <button type="button" id="analyze-btn">Analyze</button>
+        <br/>
+        <br/>
+        <h3>Image</h3>
+        <img id="image" src="" alt="analyzed photo" width="300"></img>
+        <br/>
+        <br/>
+        <span id="errors" style="color:red"></span>
+        <br/>
+        <br/>
+        <h3>Attributes</h3>
+        <div>
+            <span>Age: <small id="age"></small></span> <br>
+            <span>Gender: <small id="gender"></small></span>
+        </div>
+        
+    </body>
+</html>

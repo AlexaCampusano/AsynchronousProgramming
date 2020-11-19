@@ -1,36 +1,3 @@
-class CognitiveServicesAPI {
-    constructor() {
-        this.headers = {
-            'Ocp-Apim-Subscription-Key': '{your_api_key}',
-            'Content-Type': 'application/json'
-        }
-        this.baseUrl = 'https://eastus.api.cognitive.microsoft.com';
-    }
-
-    analyzeKeyPhrases = (text) => {
-        const url = `${this.baseUrl}/text/analytics/v2.0/keyPhrases`;
-        const body = { documents: [ { language: 'en', id: '1', text: text } ] };
-
-        const initObject = {
-            method: 'POST',
-            headers: this.headers,
-            body: JSON.stringify(body)
-        };
-
-        const request = new Request(url, initObject);
-
-        return fetch(request)
-        .then((response) => {
-            if (response.ok) {
-                return response.json();
-            }
-
-            return Promise.reject(new Error(response.statusText));
-        })
-        .catch((err) => Promise.reject(err));
-    }
-}
-
 class TextAnalytics {
     textElement = document.getElementById('text-analytics-box');
     resultsElement = document.getElementById('results');
