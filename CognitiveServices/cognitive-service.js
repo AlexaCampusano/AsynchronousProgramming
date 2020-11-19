@@ -1,10 +1,10 @@
 class CognitiveServicesAPI {
     constructor() {
         this.headers = {
-            'Ocp-Apim-Subscription-Key': '',
+            'Ocp-Apim-Subscription-Key': '{your_api_key}',
             'Content-Type': 'application/json'
         }
-        this.baseUrl = 'https://eastus.api.cognitive.microsoft.com';
+        this.baseUrl = '{cognitive_service_url}';
     }
 
     analyzeKeyPhrases = (text) => {
